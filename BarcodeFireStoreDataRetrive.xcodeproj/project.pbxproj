@@ -12,6 +12,7 @@
 		8422145D1FA8E2B8004CE5E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8422145B1FA8E2B8004CE5E5 /* Main.storyboard */; };
 		8422145F1FA8E2B8004CE5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8422145E1FA8E2B8004CE5E5 /* Assets.xcassets */; };
 		842214621FA8E2B8004CE5E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842214601FA8E2B8004CE5E5 /* LaunchScreen.storyboard */; };
+		CA9F9637BA92CF8A3951F2A0 /* Pods_BarcodeFireStoreDataRetrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D6A9EC05CC466EACFDBCC4 /* Pods_BarcodeFireStoreDataRetrive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		8422145E1FA8E2B8004CE5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842214611FA8E2B8004CE5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842214631FA8E2B8004CE5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D6A9EC05CC466EACFDBCC4 /* Pods_BarcodeFireStoreDataRetrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarcodeFireStoreDataRetrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD3C768A66976CB6F381ADC /* Pods-BarcodeFireStoreDataRetrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeFireStoreDataRetrive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarcodeFireStoreDataRetrive/Pods-BarcodeFireStoreDataRetrive.debug.xcconfig"; sourceTree = "<group>"; };
+		E1A411A80A645EB7D04A47F3 /* Pods-BarcodeFireStoreDataRetrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeFireStoreDataRetrive.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarcodeFireStoreDataRetrive/Pods-BarcodeFireStoreDataRetrive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9F9637BA92CF8A3951F2A0 /* Pods_BarcodeFireStoreDataRetrive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055A695B9C84902D02404227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5D6A9EC05CC466EACFDBCC4 /* Pods_BarcodeFireStoreDataRetrive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48C3BF62F4FF301C8AF6D3B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDD3C768A66976CB6F381ADC /* Pods-BarcodeFireStoreDataRetrive.debug.xcconfig */,
+				E1A411A80A645EB7D04A47F3 /* Pods-BarcodeFireStoreDataRetrive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8422144B1FA8E2B8004CE5E5 = {
 			isa = PBXGroup;
 			children = (
 				842214561FA8E2B8004CE5E5 /* BarcodeFireStoreDataRetrive */,
 				842214551FA8E2B8004CE5E5 /* Products */,
+				48C3BF62F4FF301C8AF6D3B7 /* Pods */,
+				055A695B9C84902D02404227 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 842214661FA8E2B8004CE5E5 /* Build configuration list for PBXNativeTarget "BarcodeFireStoreDataRetrive" */;
 			buildPhases = (
+				3FC7CB53BDA3829049DB1EBA /* [CP] Check Pods Manifest.lock */,
 				842214501FA8E2B8004CE5E5 /* Sources */,
 				842214511FA8E2B8004CE5E5 /* Frameworks */,
 				842214521FA8E2B8004CE5E5 /* Resources */,
+				4563E62EAD9C6D32AF2A2A47 /* [CP] Embed Pods Frameworks */,
+				AE62BED847CED3F91B4DC3EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FC7CB53BDA3829049DB1EBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BarcodeFireStoreDataRetrive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4563E62EAD9C6D32AF2A2A47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BarcodeFireStoreDataRetrive/Pods-BarcodeFireStoreDataRetrive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarcodeFireStoreDataRetrive/Pods-BarcodeFireStoreDataRetrive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE62BED847CED3F91B4DC3EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarcodeFireStoreDataRetrive/Pods-BarcodeFireStoreDataRetrive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		842214501FA8E2B8004CE5E5 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		842214671FA8E2B8004CE5E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD3C768A66976CB6F381ADC /* Pods-BarcodeFireStoreDataRetrive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		842214681FA8E2B8004CE5E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A411A80A645EB7D04A47F3 /* Pods-BarcodeFireStoreDataRetrive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
